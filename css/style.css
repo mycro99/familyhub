@@ -276,4 +276,139 @@ img {
     height: 42px;
     margin-bottom: 14px;
   }
+  .hidden {
+  display: none !important;
+}
+
+.auth-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(
+      circle at top left,
+      var(--primary-light),
+      transparent 42%
+    ),
+    var(--background);
+}
+
+.auth-container {
+  width: min(100%, 460px);
+}
+
+.auth-card {
+  padding: clamp(24px, 6vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.auth-brand h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.auth-brand p {
+  margin: 5px 0 0;
+  color: var(--text-soft);
+}
+
+.auth-form {
+  display: grid;
+  gap: 20px;
+}
+
+.auth-form .primary-button {
+  width: 100%;
+}
+
+.primary-button:disabled,
+.icon-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+  transform: none;
+}
+
+.form-message {
+  min-height: 22px;
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.form-message.error {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-summary {
+  margin-bottom: 24px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.dashboard-summary h2 {
+  margin: 4px 0 8px;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+}
+
+.dashboard-summary p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.dashboard-kicker {
+  color: var(--primary) !important;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-loading {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .brand-subtitle {
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .icon-button {
+    width: 44px;
+    height: 44px;
+  }
+}
 }
