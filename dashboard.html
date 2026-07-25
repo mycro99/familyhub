@@ -2,10 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
+
+  <meta name="theme-color" content="#4a90e2">
 
   <title>Family Hub — Tableau de bord</title>
 
@@ -14,10 +17,101 @@
 
 <body>
 
-  <main>
-    <h1>Family Hub</h1>
-    <p>Tableau de bord familial</p>
-  </main>
+  <div id="app-loading" class="app-loading">
+    Chargement de Family Hub…
+  </div>
+
+  <div id="app-content" class="page-shell hidden">
+
+    <header class="app-header">
+
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">🏠</div>
+
+        <div>
+          <h1 class="brand-title">Family Hub</h1>
+          <p class="brand-subtitle" id="welcome-message">
+            Tableau de bord familial
+          </p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+
+        <button
+          id="theme-toggle"
+          class="icon-button"
+          type="button"
+          aria-label="Changer de thème"
+          title="Changer de thème"
+        >
+          🌙
+        </button>
+
+        <button
+          id="logout-button"
+          class="icon-button"
+          type="button"
+          aria-label="Se déconnecter"
+          title="Se déconnecter"
+        >
+          🚪
+        </button>
+
+      </div>
+
+    </header>
+
+    <section class="dashboard-summary">
+      <p class="dashboard-kicker">Aujourd’hui</p>
+      <h2>Bienvenue dans votre espace familial</h2>
+      <p>
+        Retrouvez ici les courses, les repas, le calendrier et les tâches
+        de toute la famille.
+      </p>
+    </section>
+
+    <main class="dashboard-grid">
+
+      <a class="dashboard-card" href="#">
+        <div class="dashboard-card-icon">🛒</div>
+        <h2>Courses</h2>
+        <p>Créer et partager la liste de courses.</p>
+      </a>
+
+      <a class="dashboard-card" href="#">
+        <div class="dashboard-card-icon">🍽️</div>
+        <h2>Repas</h2>
+        <p>Organiser les menus de la semaine.</p>
+      </a>
+
+      <a class="dashboard-card" href="#">
+        <div class="dashboard-card-icon">📅</div>
+        <h2>Calendrier</h2>
+        <p>Voir les rendez-vous de la famille.</p>
+      </a>
+
+      <a class="dashboard-card" href="#">
+        <div class="dashboard-card-icon">✅</div>
+        <h2>Tâches</h2>
+        <p>Répartir et suivre les tâches familiales.</p>
+      </a>
+
+      <a class="dashboard-card" href="#">
+        <div class="dashboard-card-icon">👨‍👩‍👧</div>
+        <h2>Famille</h2>
+        <p>Gérer les membres et leurs profils.</p>
+      </a>
+
+      <a class="dashboard-card" href="#">
+        <div class="dashboard-card-icon">⚙️</div>
+        <h2>Paramètres</h2>
+        <p>Personnaliser Family Hub.</p>
+      </a>
+
+    </main>
+
+  </div>
 
   <script type="module" src="js/app.js"></script>
 
