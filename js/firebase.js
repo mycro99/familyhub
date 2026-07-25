@@ -4,8 +4,9 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/12.16.0/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
 
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCKJLKzSmcRSX5001UrAHSn-jRw409XMJg",
+  apiKey: "AIzaSyCKJLKzSmcRSX5O01UrAHSn-jRw409XMJg",
   authDomain: "family-hub-d9e66.firebaseapp.com",
   projectId: "family-hub-d9e66",
   storageBucket: "family-hub-d9e66.firebasestorage.app",
